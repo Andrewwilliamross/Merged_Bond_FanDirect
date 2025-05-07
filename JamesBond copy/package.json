@@ -1,0 +1,28 @@
+{
+  "name": "mac-agent",
+  "version": "1.0.0",
+  "description": "Bridge between Supabase and iMessage on macOS",
+  "main": "src/agent.js",
+  "scripts": {
+    "start": "node src/agent.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "imessage",
+    "supabase",
+    "macos",
+    "agent"
+  ],
+  "author": "Manus",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
+    "applescript": "^1.0.0",
+    "axios": "^1.9.0",
+    "better-sqlite3": "^11.9.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "fs-extra": "^11.3.0",
+    "node-mac": "^1.0.1"
+  }
+}

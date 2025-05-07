@@ -1,0 +1,34 @@
+
+# A string used to distinguish different Supabase projects on the same host. Defaults to the working
+# directory name when running `supabase init`.
+project_id = "uaqnjttwmrosudmbpcct"
+
+[auth]
+# The base URL of your website. Used as an allow-list for redirects and for constructing URLs used
+# in emails.
+site_url = "https://lovable.dev"
+# A list of *exact* URLs that auth providers are permitted to redirect to post authentication.
+additional_redirect_urls = []
+# How long tokens are valid for, in seconds. Defaults to 3600 (1 hour), maximum 604,800 (1 week).
+jwt_expiry = 3600
+# Which auth providers to enable. The first provider is used for [sso] settings like disable_signup.
+# Use 'email' to enable email/password authentication, etc.
+enable_signup = true
+# If specified, the database user is sent to the Row Level Security class to be checked
+# on each request. Public by default.
+
+[auth.email]
+# Allow users to sign up via email. Set to 'false' to disable signups via email.
+enable_signup = true
+# Allow sign-in when the email is not confirmed, but still send confirmation emails.
+enable_confirmations = true
+
+[edge_functions]
+[edge_functions.notify-mac-server]
+verify_jwt = false
+
+[edge_functions.handle-inbound-message]
+verify_jwt = false
+
+[edge_functions.setup-storage]
+verify_jwt = false
