@@ -1,0 +1,2 @@
+[functions.manage-mac-server]
+verify_jwt = true 

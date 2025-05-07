@@ -1,0 +1,2 @@
+[functions.handle-subscription]
+verify_jwt = true 

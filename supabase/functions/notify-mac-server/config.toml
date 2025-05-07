@@ -1,0 +1,2 @@
+[functions.notify-mac-server]
+verify_jwt = true 
